@@ -24,22 +24,25 @@
      }
     
      .container{
-       background-color:darkgrey;
+       background-color:lightpink;
        max-width: 1200px;
        margin:auto;
+      
      }
      .image{
        width: 400px;
        height: 370px;
        padding:20px;
-     
+
+      
      }
+  
      .text{
        padding: 10px;
        margin: 10px 20px 20px 20px;
        text-align: center;
        font-family: 'Times New Roman', Times, serif;
-       background-color:pink;
+       background-color: hotpink;
      }
      .back_image{
        width: 100%;
@@ -48,6 +51,13 @@
        background-size: cover;
        background-position: center;
       }
+      #products{
+        border-radius: 100px;
+        background-color: hotpink;
+        margin-left: 400px;
+        margin-right: 400px;
+      }
+    
      
     </style>
 
@@ -61,13 +71,20 @@
         <br>
         
 
-       
+        <h5 style="margin-left: 100px; color;"><a style="color: white;" href="#products">Swipe to products</a></h5>
         <h3 style="color: white; margin-left: 100px;"><big>Products contained on this page:</big></h3>
         <ul style="font-style:oblique; color: white; margin-left: 100px;">
             <li>Face cream</li>
             <li>Face mask</li>
             <li>Makeup products</li>
+            <ol style="font-size: 25px;">
+              <li>Lipstick</li>
+              <li>Foundation</li>
+              <li>Palette</li>
+
+            </ol>
         </ul>
+       
         
         </div>
    
@@ -77,13 +94,13 @@
          <br>
 
         
-
-
+<p align=center style="font-size: 30px;" id="products"><b><i>Products</i></b></p>
+<section style="background-color: lightpink;">
 <table class="container">
   <tr>
     <td><a href="face products_images/f1.jpg" target="_blank"><img class="image" src="face products_images/f1.jpg"/></a><p class="text">A makeup remover and face cleanser that virtually melts away all makeup, leaving the skin hydrated and silky smooth</p></td>
-    <td><a href="face products_images/f2.jpg" target="_blank"><img class="image" src="face products_images/f2.jpg"/></a><p class="text">NEW from <b>Hydro Boost</b> is your complete hydration regime. For skin so hydrated and supple, it bounces back</p></td>
-    <td><a href="face products_images/f3.jpg" target="_blank"><img class="image" src="face products_images/f3.jpg"/></a><p class="text"><b>Neutrogena Timeless Boost Hydrogel Recovery Mask </b>helps reduces fine lines for a smoother, more youthful-looking skin.</p></td>
+    <td><a href="face products_images/f2.jpg" target="_blank"><img class="image" src="face products_images/f2.jpg"/></a><p class="text">NEW from <b><mark style="background-color:cornflowerblue;">Hydro Boost</mark></b> is your complete hydration regime. For skin so hydrated and supple, it bounces back</p></td>
+    <td><a href="face products_images/f3.jpg" target="_blank"><img class="image" src="face products_images/f3.jpg"/></a><p class="text"><b><mark style="background-color:darkmagenta;">Neutrogena Timeless Boost Hydrogel Recovery Mask </mark></b>helps reduces fine lines for a smoother, more youthful-looking skin.</p></td>
   </tr>
   <tr>
     <td><a href="face products_images/f4.jpg" target="_blank"><img class="image" src="face products_images/f4.jpg"/></a><ul class="text" style="text-align: left; font-size: 17px;"><li>Remove melanin</li><li>Inhibit the generation of spots</li><li>Nourish skin</li></ul></td>
@@ -98,5 +115,16 @@
 
 </table>
 
+<p style="font-size: 30px;"><i>For which one of products in this page you are intereted more</i></p>
+<form action="">
+<div><input type="checkbox">
+<label for="cream" style="font-size: 25px;">Face cream</label></div>
+<div><input type="checkbox">
+<label for="mask" style="font-size: 25px;">Face mask</label></div>
+<div><input type="checkbox">
+<label for="makeup" ><abbr  style="font-size: 22px;"  title="Make Up Products">MUP</abbr></label></div>
+<div><input style="margin:10px" type="submit" value="Submit"></div>
+</form>
+</section>
     </body>
 </html>
