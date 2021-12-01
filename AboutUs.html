@@ -1,79 +1,89 @@
 <html>
-    <head>
-        <title>About Us | Health and Beauty</title>  
-  
 
-<style>
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+<head>
 
-.contact{
-    height: 100%;
-    padding: 50px 100px 50px 150px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.357),rgba(0, 0, 0, 0.357)), url(face\ products_images/f20.jpg);
-    background-size:cover ;
-    background-position: center;
-}
-.container{
-    width: 100%;
-    display: flex;
-}
-.contactInfo{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    font-size: 20px;
-}
-  
-.contactForm{
-    width: 40%;
-    padding: 40px;
-    background: white;
-    margin-left: 200px;
-}
-.table a{
-    text-decoration: none;
-    color:midnightblue;
-}
+    <style>
+     *{
+         box-sizing: border-box;
+     }
+    
+        .content{
+           margin: 0 300px 0 300px;
+           color: white;
+           font-size: 20px;
+           text-align: center;
+           padding-top: 30px;
+          
+        }
+        .contact{
+            color: white;
+            font-size: 20px;
+            float: left;
+            margin: 50px 300px 20px 200px;
+        }
+        .tabela{
+            width: 30%;
+            height: 50%;
+            padding: 40px;
+            margin: 70px 300px 90px 50px;
+            background: white;
+            margin-left: 200px;
+        }
+    
+        .background{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.357),rgba(0, 0, 0, 0.357)), url(face\ products_images/f20.jpg);
+            background-size:cover ;
+            width: 100%;
+            height: 100%;
+        }
+        .table a{
+            color: darkblue;
+            text-decoration: none;
+        }
 
-</style>
+
+    </style>
 
 </head>
 
 
-
 <body>
+    
 
+<div class="background">      
+      
 
-  <section class="contact">
+<div class="content">
+<h3 style="background-color: grey;">About us</h3>
+<p>For more you can contact us by email or phone which are listed below or visit us at our center.</p>
+</div>
 
-      <div class="content" style="color: white;"> 
-        <h2 align=center style="background-color: rgb(117, 114, 114);;"><i>About us</i></h2>
-        <p style="font-size: 20px;" align=center>For more you can contact us by email or phone which are listed below or visit us at our center</p>
-      </div> <!-- class=content -->
+<div class="contact">
 
-<div class="container">
-
-<div class="contactInfo" style="color: white;">
-
-    <div style="font-size: 20px;">
-
-        <p style="background-color:rgb(117, 114, 114);">Contact us</p>
+    <p style="background-color:rgb(117, 114, 114);">Contact us</p>
     <address>
    <p><b><i>Adress: </i></b><a style="color: white;" href="https://www.google.com/maps/place/Royal+MALL" target="_blank">Prishtine</a></p>
     </address>
    <p><b><i>Phone number: </i></b><u>+3834483748342</u></p>
    <p><b><i>Email: </i></b><a style="color: white;" href="mailto:health&beauty@gmail.com">Email Us</a></p>
 
-    </div>
+</div> <!-- class=contact -->
 
+<table class="tabela">
+    <form>
+       <tr><th align=left style="font-size: 20px; padding-bottom: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: grey;"><b>For more information leave your data here</b></th></tr>
+       <tr><td><label for="fname">Full name</label></td></tr>
+       <tr><td><input type="text" required></td></tr>
+       <tr><td><label for="email">Email</label></td></tr>
+       <tr><td><input type="email" required></td></tr>
+       <tr><td><label for="pass">Password</label></td></tr>
+       <tr><td><input type="password" required></td></tr>
+       <tr><td><textarea></textarea><span>Text a message</span></td></tr>
+       <tr><td><input type="submit"></td></tr>
+    </form>
+</table>
 
-<table border="1" cellpadding="3px" style="margin-top: 50px; background-color: aliceblue;" class="table">
+<table class="table" border="1" cellpadding="3px" align=left style="margin:-180px 0 0 200px; background-color: white;">
     <caption style="background-color: rgb(117, 114, 114); color: aliceblue;">Similar Webpages: 
     </caption>
     <tr><td><a href="https://kyliecosmetics.com/en-us/kylie-skin"  target="_blank">Kylie Skin</a></td>
@@ -86,48 +96,7 @@
 
 </table>
 
-</div> <!-- class=contactInfo -->
-
-<table class="contactForm">
-    <form>
-        <tr>
-       <th align=left style="font-size: 25px; color: #333; padding-bottom: 10px;">Send message</th> 
-    </tr>
-    <tr>
-        <td><label for="fname">Full Name</label></td>
-    </tr>
-       <tr>
-    <td><input type="text" required></td>
-    </tr>
-    <tr>
-        <td><label for="email">Email</label></td>
-    </tr>
-      <tr>
-    <td><input type="text" required></td>
-    </tr> 
-        
-    <tr>
-        <td><label for="pass">Password</label></td>
-    </tr>
-    <tr>
-        <td><input type="password" required></td>
-    </tr>
-    <tr>
-        <td style="padding-top: 15px;"><textarea></textarea><span>Text a message</span></td>
-    </tr>
-    
-    <tr>
-        <td><input type="submit"></td>
-    </tr>
-    
-    </form>
-    </table>
-
-
-</div> <!-- class=container -->
-
-</section> <!-- class=contact -->
+</div>  
 
 </body>
-
 </html>
