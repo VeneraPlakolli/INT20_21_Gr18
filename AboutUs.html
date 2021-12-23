@@ -3,7 +3,8 @@
 <head>
 
     <title>AboutUs | Health and Beauty</title>
-
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     
     
@@ -49,54 +50,85 @@
 
 <body>
     
-
-<div class="background">      
+    <article id="home"><u> <h1>Health and Beauty</u></h1></article>
+    <header>
+       <nav>
+            <ul align="right">
+                <li><a href="Homepage.html">Homepage</a></li>
+                <li><a href="AboutUs.html" >About Us</a></li>
+                <li><a href="BodyCare1.html" >Body Care</a></li>
+                <li><a href="FaceCare.html">Face Care</a></li>
+                <li><a href="HairProducts.html" >Hair Care</a></li>
+                <li><a href="Perfumes.html" >Perfumes</a></li>
+            </ul>
+            
+       </nav>
+       </header>
+       <br>
+       <div class="background">      
       
 
-<header class="content">
-<h3 style="background-color: grey;">About us</h3>
-<p>For more you can contact us by email or phone which are listed below or visit us at our center.</p>
-</header> <!-- class=content -->
+        <header class="content">
+        <h3 style="background-color: grey;">About us</h3>
+        <p>For more you can contact us by email or phone which are listed below or visit us at our center.</p>
+        </header> <!-- class=content -->
+        
+        <div class="contact">
+        
+            <p align=center style="background-color:rgb(117, 114, 114);">Contact us:</p>
+            <address>
+           <p><b><i>Adress: </i></b><a style="color: white;" href="https://www.google.com/maps/place/Royal+MALL" target="_blank">Prishtine</a></p>
+            </address>
+           <p><b><i>Phone number: </i></b><u>+3834483748342</u></p>
+           <p><b><i>Email: </i></b><a style="color: white;" href="mailto:health&beauty@gmail.com">Email Us</a></p>
+        
+        </div> <!-- class=contact -->
+        
+        <table class="table">
+            <form>
+               <tr><th align=left style="font-size: 20px; padding-bottom: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: grey;"><b>For more information leave your data here</b></th></tr>
+               <tr><td><label for="fname">Full name</label></td></tr>
+               <tr><td><input id="fname" type="text" required></td></tr>
+               <tr><td><label for="email">Email</label></td></tr>
+               <tr><td><input id="email" type="email" required></td></tr>
+               <tr><td><label for="pass">Password</label></td></tr>
+               <tr><td><input id="pass" type="password" required></td></tr>
+               <tr><td><textarea rows="3" style="resize: none; margin-top: 8px;"></textarea><span>Text a message</span></td></tr>
+               <tr><td><input type="submit"></td></tr>
+            </form>
+        </table> <!-- class=table -->
+        
+        <table class="table1" border="1" cellpadding="3px" align=left style="margin:-180px 0 0 200px; background-color: white;">
+            <caption style="background-color: rgb(117, 114, 114); color: aliceblue;">Similar Webpages: 
+            </caption>
+            <tr><td><a href="https://kyliecosmetics.com/en-us/kylie-skin"  target="_blank">Kylie Skin</a></td>
+                <td><a href="https://oriflame.com/" target="_blank">Oriflame</a></td>
+         </tr>
+         <tr>
+        <td><a href="https://www.victoriassecret.com/us/vs/beauty" target="_blank">Victoria's Secret</a></td>   
+               <td><a  href="https://www.bathandbodyworks.com/" target="_blank">Bath and Body Works</a></td>
+        </tr>
+        
+        </table> <!-- class=table1 -->
+        
+        </div>  <!-- class=background -->
+        <footer style=" background: pink; background:#333; color: white;">
+            <div style="float: left; padding-left: 20px;">
+             <p>&copy; all right reserved</p>
+             <p>Na vizitoni ne qendrat tona ne: </p>
+           <select name="" id="" style="text-align: left; border-radius: 30px;">
+                     <option value="">Prishtine</option>
+                     <option value="">Prizren</option>
+                     <option value="">Gjakove</option>
+                 </select> </div>
+                 <div style="text-align: right; padding-right: 30px;" >
+                  <p style="padding-right: 50px;">You can follow us:</p>
+                 <a href="https:/facebook.com"  class="fa fa-facebook"></a>
+                 <a href="https:/instagram.com"  class="fa fa-instagram"></a>
+                 </div>
+         
+         </footer>
 
-<div class="contact">
-
-    <p align=center style="background-color:rgb(117, 114, 114);">Contact us:</p>
-    <address>
-   <p><b><i>Adress: </i></b><a style="color: white;" href="https://www.google.com/maps/place/Royal+MALL" target="_blank">Prishtine</a></p>
-    </address>
-   <p><b><i>Phone number: </i></b><u>+3834483748342</u></p>
-   <p><b><i>Email: </i></b><a style="color: white;" href="mailto:health&beauty@gmail.com">Email Us</a></p>
-
-</div> <!-- class=contact -->
-
-<table class="table">
-    <form>
-       <tr><th align=left style="font-size: 20px; padding-bottom: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: grey;"><b>For more information leave your data here</b></th></tr>
-       <tr><td><label for="fname">Full name</label></td></tr>
-       <tr><td><input id="fname" type="text" required></td></tr>
-       <tr><td><label for="email">Email</label></td></tr>
-       <tr><td><input id="email" type="email" required></td></tr>
-       <tr><td><label for="pass">Password</label></td></tr>
-       <tr><td><input id="pass" type="password" required></td></tr>
-       <tr><td><textarea rows="3" style="resize: none; margin-top: 8px;"></textarea><span>Text a message</span></td></tr>
-       <tr><td><input type="submit"></td></tr>
-    </form>
-</table> <!-- class=table -->
-
-<table class="table1" border="1" cellpadding="3px" align=left style="margin:-180px 0 0 200px; background-color: white;">
-    <caption style="background-color: rgb(117, 114, 114); color: aliceblue;">Similar Webpages: 
-    </caption>
-    <tr><td><a href="https://kyliecosmetics.com/en-us/kylie-skin"  target="_blank">Kylie Skin</a></td>
-        <td><a href="https://oriflame.com/" target="_blank">Oriflame</a></td>
- </tr>
- <tr>
-<td><a href="https://www.victoriassecret.com/us/vs/beauty" target="_blank">Victoria's Secret</a></td>   
-       <td><a  href="https://www.bathandbodyworks.com/" target="_blank">Bath and Body Works</a></td>
-</tr>
-
-</table> <!-- class=table1 -->
-
-</div>  <!-- class=background -->
 
 </body>
 </html>
