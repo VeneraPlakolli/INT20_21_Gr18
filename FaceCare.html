@@ -57,6 +57,22 @@
         opacity: 0.6;
         transition: .9s;
       }
+      div.box{
+        resize: both;
+        overflow:auto;
+      }
+      .box{
+        word-wrap: break-word;
+        border: 2px solid white;
+        margin:10px 100px 100px 800px;
+        padding: 20px;
+        font-size: 25px;
+        color:white;
+      }
+      h3{
+        font-size: 30px;
+        text-shadow: 2px 1.5px violet;
+      }
      
     </style>
 
@@ -69,10 +85,11 @@
        
         <br>
         
-
+        <article>
         <h5 style="margin-left: 100px; color:white;"><a style="color: white; text-decoration: none;" href="#products">Swipe to products</a></h5>
         <h3 style="color: white; margin-left: 100px;"><big>Products contained on this page:</big></h3>
-        <ul style="font-style:oblique; color: white; margin-left: 100px; list-style-type:circle;">
+        </article>
+        <ul style="font-style:oblique; float: left; color: white; margin-left: 100px; list-style-type:circle;">
             <li>Face cream</li>
             <li>Face mask</li>
             <li>Makeup products</li>
@@ -83,6 +100,7 @@
 
             </ol>
         </ul>
+        <div class="box">Skin care is the range of practices that support skin integrity, enhance its appearance and relieve skin conditions. They can include nutrition, avoidance of excessive sun exposure and appropriate use of emollients.</div>
        
         
         </div> <!-- class back_image -->
