@@ -58,7 +58,18 @@
         padding: 20px;
         font-size: 25px;
         color:white;
+        animation-name: name;
+        animation-duration:8s;
       }
+
+      @keyframes name{
+        0%{color:white;}
+        25%{color:pink;}
+        50%{color:purple;}
+        75%{color:blue;}
+        100%{color:green;}
+      }
+
       td{
         border: 2px solid white;
       }
@@ -95,7 +106,7 @@
         <h5 style="margin-left: 100px; color:white;"><a style="color: white; text-decoration: none; font-size: 20px;" href="#products">Swipe to products</a></h5>
         <h3 style="color: white; font-size: 30px; text-shadow: 2px 1.5px violet; margin-left: 100px;"><big>Products contained on this page:</big></h3>
       </article>
-      
+
         <ul style="font-style:oblique; float: left; color: white; font-size: 30px; margin-left: 100px; list-style-type:circle;">
             <li>Face cream</li>
             <li>Face mask</li>
