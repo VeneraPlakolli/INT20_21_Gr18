@@ -58,6 +58,14 @@
                 margin: 200px 0px 0px 0px;
                 color: wheat;
             }
+            @font-face {
+           font-family: myFirstFont;
+           src: url(sansation_bold.woff);
+           font-weight: bold;
+          }
+            body {
+            font-family: myFirstFont;
+          }
         </style>
         
     </head>
@@ -98,7 +106,7 @@
           <br><br><br><br><br>
          </div> <!--div wallpaper-->
           <br><br><br>
-          <h2 id="products" align="center" style="margin: 0px 300px 0px 300px;border-radius: 100px;  background-color:plum;">Products: </h2>
+          <h2 id="products" align="center" style="margin: 0px 300px 0px 300px;border-radius: 100px;  background:radial-gradient(hotpink,violet,plum) ;">Products: </h2>
         <br><br> <hr> <br><br>
          <table align="center" class="t2">
             <tr>
@@ -122,14 +130,24 @@
                 <td> <a href="hairproducts_images/h12.jpg"><img class="image-resize" src="hairproducts_images/h12.jpg" alt="hair care product" ></a><p><b>Shampoo & Conditioner | Coco & Eve</b></p></td>
         </tr>
 </table>
-<footer style=" background: pink; background:#333; color: white;">
+<img id="scream" width="220" height="277"
+src="s.jpg" alt="The Scream">
+<canvas id="myCanvas" width="240" height="250">
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img);
+</script>
+<footer style="  background:#333; color: white;">
     <div style="float: left; padding-left: 20px;">
      <p>&copy; all right reserved</p>
-     <p>Na vizitoni ne qendrat tona ne: </p>
+     <p>Na vizitoni n&euml; qendrat tona n&euml;: </p>
    <select name="" id="" style="text-align: left; border-radius: 30px;">
-             <option value="">Prishtine</option>
+             <option value="">Prishtin&euml;</option>
              <option value="">Prizren</option>
-             <option value="">Gjakove</option>
+             <option value="">Gjakov&euml;</option>
          </select> </div>
          <div style="text-align: right; padding-right: 30px;" >
           <p style="padding-right: 50px;">You can follow us:</p>

@@ -59,9 +59,13 @@
          margin: -20px 500px 20px 500px;
          padding-bottom: 10px;
          padding-top: 10px;
-         border-radius: 50px;
         
        }
+       #b { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(c.png) 30 round;
+}
        
 </style>
  </head>
@@ -156,9 +160,11 @@
     
           </table>
     <br><br>
-    <form align="center">
+    <form align="center" id="b">
       <div>
-      <label ><big>Did you like our products? </big></label>
+      <script> 
+          document.write("Did you like our products")
+      </script>
     </div>
     <br>
       <input type="radio" name="r" >Yes 
@@ -171,15 +177,23 @@
       
     </form><video controls loop autoplay muted style="height: 100%; width: 100%;">
         <source src="video.mp4">
-    </video>
+    </video> 
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("       Out products",10,50);
+    </script>
         <footer style=" background: pink; background:#333; color: white;">
            <div style="float: left; padding-left: 20px;">
             <p>&copy; all right reserved</p>
-            <p>Na vizitoni ne qendrat tona ne: </p>
+           
+            <p>Na vizitoni n&euml; qendrat tona n&euml;: </p>
           <select name="" id="" style="text-align: left; border-radius: 30px;">
-                    <option value="">Prishtine</option>
+                    <option value="">Prishtin&euml;</option>
                     <option value="">Prizren</option>
-                    <option value="">Gjakove</option>
+                    <option value="">Gjakov&euml;</option>
                 </select> </div>
                 <div style="text-align: right; padding-right: 30px;" >
                  <p style="padding-right: 50px;">You can follow us:</p>

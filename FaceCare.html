@@ -152,6 +152,24 @@
 </form>
 </section>
 
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient x=0, y=0 pika e fillimit, x=200 y=0 pika e fundit
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0.1,"red");
+grd.addColorStop(0.6,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,80,80);
+</script>
+
 <footer style=" background: pink; background:#333; color: white;">
   <div style="float: left; padding-left: 20px;">
    <p>&copy; all right reserved</p>
