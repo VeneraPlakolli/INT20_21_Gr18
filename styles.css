@@ -53,12 +53,15 @@ color: white;
 .fa {
 padding: 20px;
 font-size: 30px;
-width: 50px;
+width: 25px;
 text-align: center;
 text-decoration: none;
 margin: 5px 2px;
-border-radius: 30px;
+border-radius: 350px;}
+.fa:hover{
+    opacity: 0.7;
 }
+
 .fa-instagram {
     background:radial-gradient(circle at 33%  100%, #fed373 , #f15245, #d92e7f , #9b36b7 , #515ecf);
     color: white;
