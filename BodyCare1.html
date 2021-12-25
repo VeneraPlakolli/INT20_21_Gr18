@@ -3,7 +3,7 @@
     <title> Body Care | Health & Beauty </title>
  <link rel="stylesheet" href="styles.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+  
      
 <style>
 .wallpaper{
@@ -188,6 +188,25 @@
         var ctx = canvas.getContext("2d");
         ctx.font = "30px Arial";
         ctx.fillText("       Out products",10,50);
+    </script>
+
+    <script >
+      var scrub = 100;
+      var Showergel = 200;
+      var lotion = 300;
+      var oil = 150;
+      var max=scrub;
+      if(Showergel>max){
+        max=Showergel
+      }
+      if(lotion>max){
+        max=lotion
+      }
+      if(oil>max){
+        max=oil
+      }
+      document.write("The product that is saled the most: "+max +" times");
+    
     </script>
         <footer style=" background: pink; background:#333; color: white;">
            <div style="float: left; padding-left: 20px;">
