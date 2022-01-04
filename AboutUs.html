@@ -90,7 +90,7 @@
        <div class="background">      
       
         <svg width="150" height="80" style="float: left;">
-            <rect rx="15" ry="15" x="25" y="25" width="100" height="50" fill="grey"></rect>
+            <rect rx="15" ry="15" x="25" y="25" width="100px" height="50px" fill="grey"></rect>
         </svg>
 
         <header class="content">
@@ -147,6 +147,31 @@
         </div>  <!-- class=background -->
         <br> <hr> <br>
     
+
+<h4>Our company was founded in:</h4>
+        <p id="demo"></p>
+
+<script>
+let x = 44;
+let z = Math.pow(x, 2);
+document.getElementById("demo").innerHTML=z;
+</script>
+
+
+<br><hr>
+
+<h4>That another center will open with the date:</h4>
+
+<p id="data"></p>
+<script>
+    const d=new Date(2022,02,15,10,30,00);
+    document.getElementById("data").innerHTML=d;
+</script>
+
+
+
+
+
         <footer style="  background:#333; color: white;">
             <div style="float: left; padding-left: 20px; top: 0;">
              <p>&copy; all right reserved</p>

@@ -143,18 +143,49 @@
         let x1="Gucci Bloom";
         let x2="Si";
         document.getElementById("sale").innerHTML=x1 + "<br>" + x2;
-    </script>
+  </script>
 
     <hr>
     <p><b>The number of their sales per day is:</b></p>
     <p id="number"></p>
 
-    <script>
+  <script>
         let y=500+"packages";
         document.getElementById("number").innerHTML=y;
     </script>
 
 <script src="script.js"></script>
+<br>
+
+
+<h4>Quantity of perfumes:</h4>
+
+<p id="forloop"></p>
+
+<script>
+let text = "";
+
+for (let i = 50; i < 250; i=i+50){
+  text += "The quantity: " + i + "ml" + "<br>";
+}
+
+document.getElementById("forloop").innerHTML = text;
+</script>
+
+
+
+
+<h4 style="font-style: italic;" id="tostring"></h4>
+
+<script>
+let mega = "Enjoy the beauty smell !";
+let result = mega.toString();
+
+document.getElementById("tostring").innerHTML = result; 
+</script>
+
+
+
 
 
 
