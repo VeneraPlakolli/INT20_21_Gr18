@@ -10,12 +10,12 @@
       }
    
       function dragStart(event) {
-          event.dataTransfer.setData("text", event.target.id);
+          event.dataTransfer.setData( "", event.target.id);
       }
    
       function dragDrop(ev) {
           ev.preventDefault();
-          var data = ev.dataTransfer.getData("text");
+          var data = ev.dataTransfer.getData("");
           ev.target.appendChild(document.getElementById(data));
       }
       </script>
@@ -176,7 +176,22 @@
  ondrop="dragDrop(event)"
  ondragover="allowDrop(event)">
 </div>
+<p>Which firm did you like the most: </p>
+<p id="p"></p>
 
+<script>
+const hair = ["Garnier", "Pantene", "Coco & Eve", "Kerastase"];
+
+var i = 0;
+var text = "";
+while (hair[i]) {
+  text += hair[i] + "<br>";
+  i++;
+}
+
+document.getElementById("p").innerHTML = text;
+</script>
+<script src="script.js"></script>
 
 <br><br><br><br><br>
 

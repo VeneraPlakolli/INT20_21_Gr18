@@ -163,21 +163,22 @@
     
           </table>
     <br><br>
-    <form align="center" id="b">
+    <form align="center" id="form" action="" onsubmit="return validate()" method="get">
       <div>
       <script> 
           document.write("Did you like our products")
       </script>
     </div>
     <br>
-      <input type="radio" name="r" >Yes 
-      <input type="radio" name="r" >No
+      <input  type="radio" name="r" >Yes 
+      <input  type="radio" name="r" >No
       <br>
       <div>
         <br>
         <button type="submit">Submit</button>
       </div>
     </form>
+    
 
     <video controls loop autoplay muted style="height: 100%; width: 100%;">
         <source src="video.mp4">
@@ -199,15 +200,19 @@
       if(Showergel>max){
         max=Showergel
       }
-      if(lotion>max){
-        max=lotion
+      else if(lotion>max){
+        max=lotion;
       }
-      if(oil>max){
+      else if(oil>max){
         max=oil
       }
       document.write("The product that is saled the most: "+max +" times");
+      
     
     </script>
+    <br>
+    <br><br>
+    <script src="script.js"></script>
         <footer style=" background: pink; background:#333; color: white;">
            <div style="float: left; padding-left: 20px;">
             <p>&copy; all right reserved</p>

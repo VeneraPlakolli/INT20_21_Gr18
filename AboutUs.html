@@ -7,6 +7,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
        // alert("Warning!")
+       function validate(){
+       var name = document.getElementById('name')
+       var email = document.getElementById('email')
+    var password = document.getElementById('password')
+      if(name.value=="" || password.value=="" || email.value=="")
+    {
+    alert("no blank alowed");
+    return false;
+    }
+   else{
+    alert("Sent")
+  true;
+    }
+       }
+
     </script>
     <style>
     
@@ -103,14 +118,14 @@
         </div> <!-- class=contact -->
         
         <table class="table">
-            <form>
+            <form id="form" action="" onsubmit="return validate()" method="get">
                <tr><th align=left style="font-size: 20px; padding-bottom: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: grey;"><b>For more information leave your data here</b></th></tr>
-               <tr><td><label for="fname">Full name</label></td></tr>
-               <tr><td><input id="fname" type="text" required></td></tr>
+               <tr><td><label for="name">Full name</label></td></tr>
+               <tr><td><input id="name" type="text" required></td></tr>
                <tr><td><label for="email">Email</label></td></tr>
                <tr><td><input id="email" type="email" required></td></tr>
-               <tr><td><label for="pass">Password</label></td></tr>
-               <tr><td><input id="pass" type="password" required></td></tr>
+               <tr><td><label for="password">Password</label></td></tr>
+               <tr><td><input id="password" type="password" required></td></tr>
                <tr><td><textarea rows="3" style="resize: none; margin-top: 8px;"></textarea><span>Text a message</span></td></tr>
                <tr><td><input type="submit"></td></tr>
             </form>
@@ -131,6 +146,7 @@
         
         </div>  <!-- class=background -->
         <br> <hr> <br>
+    
         <footer style="  background:#333; color: white;">
             <div style="float: left; padding-left: 20px; top: 0;">
              <p>&copy; all right reserved</p>
