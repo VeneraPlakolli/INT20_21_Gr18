@@ -50,7 +50,7 @@
       }
     
       .box{
-        resize: both;
+        resize:both;
         overflow:auto;
         word-wrap: break-word;
         border: 2px solid white;
@@ -168,14 +168,28 @@
 <hr>
 
 <p><b>Creams which are useful for all skin types:</b></p>
-<p id="cream"></p>
+
+<p id="creams"></p>
 
 <script>
-const creams = ["Hydrogen", "Sturm", "Olay", "Pund's"];
-document.getElementById("cream").innerHTML = creams;
+const facecream = ["Hydrogen", "Olya", "Sturm", "Pund's"];
+document.getElementById("creams").innerHTML = facecream;
 </script>
 
 <hr>
+
+<p><b>Types of mask:</b></p>
+<p id="word"></p>
+<script>
+  var maska={
+   mask1:"Dry skin, ",
+   mask2:"Oily skin, ",
+   mask3:"All types of skin"
+  };
+  document.getElementById("word").innerHTML=maska.mask1 + "" + maska.mask2 + "" + maska.mask3;
+</script>
+
+<br><br>
 
 <canvas id="myCanvas" width="200" height="100"
 style="border:1px solid #d3d3d3;">
