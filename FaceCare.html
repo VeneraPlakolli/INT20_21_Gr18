@@ -193,7 +193,7 @@ document.getElementById("creams").innerHTML = facecream;
 
 <canvas id="myCanvas" width="200" height="100"
 style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+</canvas>
 
 <script>
 var c = document.getElementById("myCanvas");
@@ -207,7 +207,23 @@ grd.addColorStop(0.6,"white");
 // Fill with gradient
 ctx.fillStyle = grd;
 ctx.fillRect(10,10,80,80);
+
+
+
 </script>
+
+<img id="scream" width="220" height="277"
+src="s.jpg" alt="The Scream"></script>
+<canvas id="myCanvas" width="240" height="250">
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img);
+
+</script>
+<hr>
 
 <footer style=" background: pink; background:#333; color: white;">
   <div style="float: left; padding-left: 20px;">
