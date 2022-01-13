@@ -215,13 +215,14 @@ $(function(){
   $("td>p").on({
     mouseenter: function(){
       $(this).css("background-color", "lightgray");
-    },  
+    }, 
+     click: function(){
+      $(this).css("background-color", "violet");
+    } ,
     mouseleave: function(){
       $(this).css("background-color", "lightblue");
-    }, 
-    click: function(){
-      $(this).css("background-color", "violet");
-    }  
+    } 
+     
   });
 });
 </script>
