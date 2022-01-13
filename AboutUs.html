@@ -167,8 +167,20 @@ document.getElementById("demo").innerHTML=z;
     const d=new Date(2022,02,15,10,30,00);
     document.getElementById("data").innerHTML=d;
 </script>
-
-
+ 
+<p>Koordinatat e perdoruesit (Shtyp butonin per te dhenat)</p>
+<button onclick="getLocation()">Click</button>
+<p id="p1"></p>
+<script>
+    function getLocation() {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+    
+    function showPosition(position) {
+        document.getElementById("p1").innerHTML = "Gjeresia Gjeografike: " + position.coords.latitude +
+        " <br> Gjatesia Gjeografike: " + position.coords.longitude;
+    }
+    </script>
 
 
 
