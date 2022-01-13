@@ -3,7 +3,10 @@
     <title> Body Care | Health & Beauty </title>
  <link rel="stylesheet" href="styles.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+ <script
+ src="https://code.jquery.com/jquery-3.6.0.min.js"
+ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+ crossorigin="anonymous"></script>
      
 <style>
 .wallpaper{
@@ -13,8 +16,6 @@
             background-size: cover;
          
 }
-  
-
   img{
         width: 420px;
         height: 250px;
@@ -159,6 +160,8 @@
     
           </table>
     <br><br>
+    <div align ="center" ><button id="h1">hide</button><button id="sh2">show</button></div>
+    <br><br><br>
     <form align="center"  >
       <div>
       <script> 
@@ -206,6 +209,16 @@
       
     
     </script>
+    <script>
+      $(function(){
+        $("#h1").click(function(){
+          $("td>p").hide();
+        });
+        $("#sh2").click(function(){
+          $("td>p").show();
+        });
+      });
+      </script>
     <br>
     <br><br>
     <script src="script.js"></script>

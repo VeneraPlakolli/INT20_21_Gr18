@@ -3,6 +3,10 @@
         <title>Hair Products | Health & Beauty</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script>
       function allowDrop(ev) {
           ev.preventDefault();
@@ -205,6 +209,23 @@ while (hair[i]) {
 document.getElementById("p").innerHTML = text;
 </script>
 <script src="script.js"></script>
+
+  <script>
+$(function(){
+  $("td>p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "violet");
+    }  
+  });
+});
+</script>
+  
 
 <br><br><br><br><br>
 
