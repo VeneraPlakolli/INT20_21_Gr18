@@ -95,6 +95,36 @@
         <audio controls loop autoplay style="margin-left: 500px;" src="audio.m4a"></audio>
        
 
+
+
+        <br><br><hr>
+
+        <p id="page">This is Homepage</p>
+        <p id="welcome">Welcome here</p>
+        <p>Input: <input id="field" type="text" value="Comment"></p>
+
+        <button id="btn1">Set text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Set value</button>
+
+        <script>     // set
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#page").text("Thanks for visiting us!");
+                });
+                $("#btn2").click(function(){
+                    $("#welcome").html("<b>Enjoy here</b>");
+                });
+                $("#btn3").click(function(){
+                    $("#field").val("Leave a comment");
+                });
+            });
+        </script>
+
+
+        <br><br><hr>
+
+
         <footer style="background:#333; color: white;">
 
            <div style="float: left; padding-left: 20px;">

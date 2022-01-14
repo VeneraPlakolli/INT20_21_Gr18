@@ -1,6 +1,10 @@
 <html>
 <head>
     <title>Perfumes | Health and Beauty</title>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -60,6 +64,27 @@
             to{background-color:red;}
         }
 
+        .box{
+                margin: 10px 820px 50px 50px;
+                border-radius:20px;
+                background-color: blue;
+                padding: 20px;
+                width:200px;
+                height:70px;
+            }
+            .p1{
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+                
+            }
+            .p2{
+                display: none;
+                text-align: left;
+                opacity:0;
+                font-size:14px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
     </style>
 
 </head>
@@ -105,7 +130,24 @@
     <dd style="font-size: 20px;">Dior</dd> <br>
     <dt><a href="#products" style="font-size: 20px; padding-left: 20px; color:white;">Swipe to products</a></dt>
 </i>
+
 </dl>
+
+<button id="btn" style="margin-left:30px;">Append list items</button>
+<button id="btnn">Prepend list items</button>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("dd").append("(perfume)");
+        });
+        $("#btnn").click(function(){
+            $("dd").prepend("(perfume)");
+        });
+    });
+</script>
+
+<!--  Ne te njejten menyre perdoren: before dhe after, te cilat e vendosin permbajtjen para (before) dhe mbrapa (after)
+elementit te selektuar    -->
 
 
 </div> <!-- tek class=image -->
@@ -135,6 +177,26 @@
         <td><a href="perfumes_images/f11.jpeg" target="_blank"><img class="image1" src="perfumes_images/f11.jpeg" alt="Perfume image"/></a><p class="text1"><b>Good Girl </b>- Carolina Herrera</p></td>
     </tr>
     </table>
+
+    <br><br><hr>
+
+    <p id="pg">Here find some types of <b>fragrances</b></p>
+    <button id="b1">Show text</button>
+    <button id="b2">Show HTML</button>
+
+    <script>     // get
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                alert("Text: " + $("#pg").text());
+            });
+            $("#b2").click(function(){
+                alert("HTML: " + $("#pg").html());
+            });
+        });
+    </script>
+
+    <br><br><hr>
+
 
 
     <p><strong>The most sales products are:</strong></p>
@@ -184,7 +246,28 @@ let result = mega.toString();
 document.getElementById("tostring").innerHTML = result; 
 </script>
 
-
+<div class="box">
+<p class="p1">Who first invented perfume?</p>
+<p class="p2">In the world history, the Egyptians were famous for producing perfumes throughout the ancient world. 
+They were formulated from plants and flowers before they could be added to other oils. It was later refined and 
+developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type of aromatic product.</p>
+</div>
+<script>
+    $(document).ready(function(){
+        $(".box").click(function(){
+            $(".box").animate({
+                width: '500px',
+                height:'200px'
+            }, 2000);
+            $(".p2").show().animate({
+                opacity:'0.7'
+            },3000);
+            $(".p1").animate({
+                fontSize:'25px'
+            },3000);
+        });
+    });
+</script>
 
 
 

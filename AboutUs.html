@@ -2,9 +2,16 @@
 
 <head>
 
+
     <title>AboutUs | Health and Beauty</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+
     <script>
        // alert("Warning!")
        function validate(){
@@ -64,6 +71,25 @@
           transform: rotateX(180deg);
           font-size: 25px;
       }
+
+          .fade{
+                border-radius: 30px;
+                margin: 20px 900px 20px 50px;
+                padding: 10px;
+                background-color:white;
+            }
+            .c1{
+                border-radius: 20px;
+                text-align: center;
+                background-color: brown;
+                padding: 5px;
+            }
+            .c2{
+                border-radius: 20px;
+                background-color: brown;
+                padding: 10px;
+            }
+      
 
     </style>
 
@@ -181,6 +207,23 @@ document.getElementById("demo").innerHTML=z;
         " <br> Gjatesia Gjeografike: " + position.coords.longitude;
     }
     </script>
+
+
+
+<div class="fade">
+    <p class="c1">Click here to see more</p>
+    <p class="c2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit provident at facilis sint officiis ab 
+        culpa neque necessitatibus, dolorum officia corporis eos repellat,
+        quibusdam architecto harum autem reprehenderit placeat reiciendis?</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".fade").click(function(){
+                $(".c2").fadeToggle();
+            });
+        });
+    </script>
+
 
 
 

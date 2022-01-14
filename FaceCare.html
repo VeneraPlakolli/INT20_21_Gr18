@@ -1,6 +1,10 @@
 <html>
     <head>
     <title>Face care | Health and Beauty</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -106,10 +110,10 @@
         
         <article>
         <h5 style="margin-left: 100px; color:white;"><a style="color: white; text-decoration: none; font-size: 20px;" href="#products">Swipe to products</a></h5>
-        <h3 style="color: white; font-size: 30px; text-shadow: 2px 1.5px violet; margin-left: 100px;"><big>Products contained on this page:</big></h3>
+        <h3 class="h3" style="color: white; font-size: 30px; text-shadow: 2px 1.5px violet; margin-left: 100px;"><big>Products contained on this page:</big></h3>
       </article>
 
-        <ul style="font-style:oblique; float: left; color: white; font-size: 30px; margin-left: 100px; list-style-type:circle;">
+        <ul class="ul" style="font-style:oblique; float: left; color: white; font-size: 30px; margin-left: 100px; list-style-type:circle;">
             <li>Face cream</li>
             <li>Face mask</li>
             <li>Makeup products</li>
@@ -117,9 +121,18 @@
               <li>Lipstick</li>
               <li>Foundation</li>
               <li>Palette</li>
-
             </ol>
         </ul>
+
+        <script> //slide
+          $(document).ready(function(){
+            $(".h3").click(function(){
+              $(".ul").slideToggle();
+            });
+          });
+        </script>
+
+
         <div class="box">Skin care is the range of practices that support skin integrity, enhance its appearance and relieve skin conditions. They can include nutrition, avoidance of excessive sun exposure and appropriate use of emollients.</div>
        
         
