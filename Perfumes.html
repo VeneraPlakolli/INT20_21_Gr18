@@ -252,7 +252,7 @@ document.getElementById("tostring").innerHTML = result;
 They were formulated from plants and flowers before they could be added to other oils. It was later refined and 
 developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type of aromatic product.</p>
 </div>
-<script>
+<script>    // animate
     $(document).ready(function(){
         $(".box").click(function(){
             $(".box").animate({
@@ -261,7 +261,7 @@ developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type
             }, 2000);
             $(".p2").show().animate({
                 opacity:'0.7'
-            },3000);
+            },3000);    // per 3 sec do te realizohet animacioni { opacity: '0.7' }
             $(".p1").animate({
                 fontSize:'25px'
             },3000);
@@ -272,7 +272,7 @@ developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type
 <button id="remove" style="margin-left:25px;">Remove the div</button>
 <button id="empty">Empty the div</button>
 
-<script>
+<script>    // remove and empty
     $(document).ready(function(){
         $("#remove").click(function(){
             $(".box").remove();
@@ -282,6 +282,36 @@ developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type
         });
     });
 </script>
+
+<br><hr>
+
+<p id="pp">Click the button below to hide this paragraph.</p>
+<button id="hide">Hide</button>
+<script>  // callback (realizohet pasi te perfundoj efekti, pra ne kete rast pasi te fshihet paragrafi del alert box-i)
+            $(document).ready(function(){
+                $("#hide").click(function(){                                       
+                    $("#pp").hide("slow", function(){
+                        alert("This paragraph is hidden!");
+                    });
+                });
+            });
+</script>
+
+
+<!--
+    <script>   // without callback (realizohet para efektit, pra se pari del alert pastaj fshihet pargrafi)
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("#pp").hide(1000);
+                        alert("This paragraph is hidden");
+                });
+            });
+            </script>
+-->
+
+
+
+<br><hr>
 
 
 
