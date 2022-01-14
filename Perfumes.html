@@ -65,7 +65,7 @@
         }
 
         .box{
-                margin: 10px 820px 50px 50px;
+                margin: 10px 820px 20px 50px;
                 border-radius:20px;
                 background-color: blue;
                 padding: 20px;
@@ -268,6 +268,21 @@ developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type
         });
     });
 </script>
+
+<button id="remove" style="margin-left:25px;">Remove the div</button>
+<button id="empty">Empty the div</button>
+
+<script>
+    $(document).ready(function(){
+        $("#remove").click(function(){
+            $(".box").remove();
+        });
+        $("#empty").click(function(){
+            $(".box").empty();
+        });
+    });
+</script>
+
 
 
 
