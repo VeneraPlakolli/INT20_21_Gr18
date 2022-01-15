@@ -232,6 +232,38 @@ document.getElementById("demo").innerHTML=z;
 
 
 
+<p>Count numbers: <output id="web"></output></p>      <!--  webworkers   -->
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+
+
+<script>
+var w;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("webworkers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("web").innerHTML = event.data;
+    };
+  } 
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+
+
+
+
+
+
         <footer style="  background:#333; color: white;">
             <div style="float: left; padding-left: 20px; top: 0;">
              <p>&copy; all right reserved</p>
