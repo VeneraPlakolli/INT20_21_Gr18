@@ -242,15 +242,15 @@ document.getElementById("demo").innerHTML=z;
 var w;
 
 function startWorker() {
-  if(typeof(Worker) !== "undefined") {
+ 
     if(typeof(w) == "undefined") {
       w = new Worker("webworkers.js");
     }
-    w.onmessage = function(event) {
-      document.getElementById("web").innerHTML = event.data;
+    w.onmessage = function(e) {
+      document.getElementById("web").innerHTML = e.data;
     };
   } 
-}
+
 
 function stopWorker() { 
   w.terminate();
